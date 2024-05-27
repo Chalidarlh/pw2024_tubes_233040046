@@ -1,0 +1,66 @@
+:root {
+  --warna1: #132013;
+  --warna2: #10140c;
+  --warna3: #182818;
+}
+
+body {
+  background-color: var(--warna1);
+  /* font-family: "Bad Script", cursive; */
+}
+
+.jumbotron {
+  min-height: 95vh;
+  padding: 5rem 0;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: white;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  bottom: 0;
+  background: linear-gradient(0deg, rgb(19, 32, 19) 13%, rgba(255, 255, 255, 0) 80%);
+}
+
+.jumbotrongrup {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+/* .jumbotrongrup h1 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150px;
+}
+.jumbotrongrup h3 {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 50px;
+}
+.jumbotrongrup p {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 30px; */
+/* } */
+.tth {
+  padding: 6rem 6%;
+}
+.login {
+  background-color: var(--warna3);
+  padding: 0 4rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

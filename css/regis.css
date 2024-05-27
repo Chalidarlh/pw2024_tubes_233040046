@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.regis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.regis .card {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
