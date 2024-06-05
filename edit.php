@@ -44,6 +44,12 @@ if (isset($_POST["submit"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Edit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
     <style>
         body,
         html {
@@ -52,7 +58,7 @@ if (isset($_POST["submit"])) {
             background-size: cover;
             background-position: center;
             color: white;
-
+            font-family: "Cardo", serif;
         }
 
         .edit {
@@ -102,6 +108,13 @@ if (isset($_POST["submit"])) {
                         <label for="cover" class="form-label">Cover Album</label>
                         <img src="img/<?= $msk['cover']; ?>" class="img-thumbnail mb-2" width="80px">
                         <input type="file" class="form-control" id="cover" name="cover">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kategori_id" class="form-label">Category Id</label>
+                        <select name="kategori_id" id="kategori_id" class="form-control" required value="<?= $msk["kategori_id"] ?>">
+                            <option value="1">Solo</option>
+                            <option value="2">Duo/Group</option>
+                        </select>
                     </div>
                     <button type=" submit" class="btn btn-primary" name="submit">Update</button>
                 </form>

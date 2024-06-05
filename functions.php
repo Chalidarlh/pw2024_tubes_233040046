@@ -22,6 +22,8 @@ function tambah($data)
     $album = htmlspecialchars($data["album"]);
     $duration = htmlspecialchars($data["duration"]);
     $dateAdded = htmlspecialchars($data["dateAdded"]);
+    $kategori_id = htmlspecialchars($data["kategori_id"]);
+
 
     //upload gambar
     $cover = upload();
@@ -30,7 +32,7 @@ function tambah($data)
     }
 
     $query = "INSERT INTO lagu VALUES
-            (NULL, '$title', '$artist', '$album', '$duration', '$dateAdded', '$cover')
+            (NULL, '$title', '$artist', '$album', '$duration', '$dateAdded', '$cover', '$kategori_id')
          ";
     mysqli_query($conn, $query);
 
@@ -100,6 +102,7 @@ function edit($data)
     $duration = htmlspecialchars($data["duration"]);
     $dateAdded = htmlspecialchars($data["dateAdded"]);
     $gambarLama = htmlspecialchars($data["gambarLama"]);
+    $kategori_id = htmlspecialchars($data["kategori_id"]);
 
     //cek apakah user pilih gambar baru atau tidak
     if ($_FILES['cover']['error'] === 4) {
@@ -115,7 +118,8 @@ function edit($data)
           album= '$album',
           duration='$duration',
           dateAdded='$dateAdded',
-          cover='$cover'
+          cover='$cover',
+          kategori_id='$kategori_id'
           WHERE id=$id
           ";
     mysqli_query($conn, $query);

@@ -3,6 +3,7 @@ body {
   background-image: url(../img/bg2.jpg);
   background-size: cover;
   background-position: center;
+  font-family: "Cardo", serif;
 }
 .regis {
   display: flex;

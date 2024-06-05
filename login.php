@@ -75,7 +75,9 @@ if (isset($_POST["cari"])) {
     <link rel="stylesheet" href="./css/login.css">
 
     <!-- font -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -99,6 +101,15 @@ if (isset($_POST["cari"])) {
                     <li class="nav-item">
                         <a class="nav-link" href="#tth">TTH</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Artist
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="solo.php">Solo</a></li>
+                            <li><a class="dropdown-item" href="duo.php">Duo/Group</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#admin">Admin</a>
                     </li>
@@ -113,7 +124,7 @@ if (isset($_POST["cari"])) {
         <div class="jumbotrongrup">
             <h1>TTH</h1>
             <h3>Today's Top Hits</h3>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p class="lead">TTH is a collection of 20 popular songs from artists across all genres. Is there your favorite here?</p>
         </div>
     </section>
 

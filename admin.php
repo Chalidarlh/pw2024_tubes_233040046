@@ -37,6 +37,20 @@ if (isset($_POST["cari"])) {
     <title>TTH | Today's Top Hits</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        body {
+            font-family: "Cardo", serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,6 +66,7 @@ if (isset($_POST["cari"])) {
             </div>
             <div class="navdua">
                 <a href="tambah.php" class="btn btn-primary me-3" role="button">Add Songs</a>
+                <a href="cetak.php" class="btn btn-success me-3" role="button" target="_blank"> <i data-feather="printer"></i></a>
                 <a href="logout.php" class="btn btn-danger" role="button">Log out</a>
             </div>
 
@@ -134,6 +149,10 @@ if (isset($_POST["cari"])) {
         </ul>
     </nav>
 
+    <!-- Feather Icons -->
+    <script>
+        feather.replace();
+    </script>
 
     <!-- script-->
     <script src="js/script.js"></script>
