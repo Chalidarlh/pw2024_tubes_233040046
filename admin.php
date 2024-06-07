@@ -64,6 +64,7 @@ if (isset($_POST["cari"])) {
                     <button class="btn btn-outline-success" type="submit" name="cari" id="tombol-cari">Search</a></button>
                 </form>
             </div>
+
             <div class="navdua">
                 <a href="tambah.php" class="btn btn-primary me-3" role="button">Add Songs</a>
                 <a href="cetak.php" class="btn btn-success me-3" role="button" target="_blank"> <i data-feather="printer"></i></a>
@@ -87,6 +88,7 @@ if (isset($_POST["cari"])) {
                         <th scope="col">Album</th>
                         <th scope="col">Duration</th>
                         <th scope="col">Date Added</th>
+                        <th scope="col">Category Id</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -103,6 +105,7 @@ if (isset($_POST["cari"])) {
                             <td><?= $msk['album']; ?> </td>
                             <td><?= $msk['duration']; ?> </td>
                             <td><?= $msk['dateAdded']; ?> </td>
+                            <td class="text-center"><?= $msk['kategori_id']; ?> </td>
 
 
                             <td>

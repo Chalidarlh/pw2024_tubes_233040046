@@ -81,6 +81,9 @@ if (isset($_POST["cari"])) {
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -124,7 +127,7 @@ if (isset($_POST["cari"])) {
         <div class="jumbotrongrup">
             <h1>TTH</h1>
             <h3>Today's Top Hits</h3>
-            <p class="lead">TTH is a collection of 20 popular songs from artists across all genres. Is there your favorite here?</p>
+            <p class="lead">TTH is a collection of popular songs from artists across all genres. Is there your favorite here?</p>
         </div>
     </section>
 
@@ -172,28 +175,28 @@ if (isset($_POST["cari"])) {
         </div>
 
         <div class="col galeri">
-            <div class="card mb-3 mt-5">
+            <div class="card mb-3 mt-5" data-aos="flip-right" data-aos-duration="1550">
                 <img src="./img/espresso.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Espresso - Sabrina tells us about love that is energizing and lightly addictive as caffeine </p>
                 </div>
             </div>
-            <div class="card mb-3 mt-5">
+            <div class="card mb-3 mt-5" data-aos="flip-left" data-aos-duration="1550">
                 <img src="./img/ttpd.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">The Tortured Poets Department - This is the eleventh studio album by Taylor Swift which was released on April 19, 2024 and has 16 tracklists</p>
                 </div>
             </div>
-            <div class="card mb-5 mt-5">
+            <div class="card mb-5 mt-5" data-aos="flip-right" data-aos-duration="1550">
                 <img src="./img/ariana grande eternal sunshine.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Eternal Sunshine - Eternal Sunshine is the seventh studio album by Ariana Grande which has 13 tracklists and one of them, <i>we can't be friends (wait for your love)</i> has been listened to more than 500 million on Spotify.</p>
                 </div>
             </div>
-            <div class="card mb-5 mt-5">
+            <div class="card mb-5 mt-5" data-aos="flip-left" data-aos-duration="1550">
                 <img src="./img/lunchbillie.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Hit Me Hard and Soft - Hit Me Hard and Soft is the third studio album by Billie Eilish which was released on May 17, 2024</p>
                 </div>
             </div>
         </div>
@@ -245,7 +248,14 @@ if (isset($_POST["cari"])) {
         feather.replace();
     </script>
 
+    <!-- js -->
     <script src="js/script2.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

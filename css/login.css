@@ -64,7 +64,7 @@ body {
 }
 .login {
   background-color: var(--warna3);
-  padding: 0 4rem;
+  padding: 2rem 4rem;
   padding-bottom: 10rem;
   display: flex;
   justify-content: center;

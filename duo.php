@@ -17,14 +17,30 @@ if (isset($_POST["cari"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TTH | Duo/Group</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-color: #182818;
+            font-family: "Cardo", serif;
 
+        }
+
+        .navbar-brand {
+            font-family: "Edu TAS Beginner", cursive;
         }
 
         .tabel {
             padding: 6rem 7% 1.4rem;
+        }
+
+        .container h1 {
+            color: white;
+            margin-bottom: 2rem;
         }
     </style>
 </head>
@@ -63,7 +79,8 @@ if (isset($_POST["cari"])) {
 
     <!-- tabel -->
     <section class="tabel">
-        <div class="container" id="container">
+        <div class="container table-responsive" id="container">
+            <h1 class="text-center">🎤Duo/Group</h1>
             <table class="table table-striped table-hover table-dark" id="tabel">
                 <thead>
                     <tr>
